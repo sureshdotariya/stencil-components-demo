@@ -1,0 +1,1 @@
+System.register(["./p-4e5999f1.system.js"],(function(){"use strict";var e,t;return{setters:[function(n){e=n.p;t=n.b}],execute:function(){e().then((function(e){return t([["p-pj6ondgp.system",[[1,"modal-dialog",{title:[1],visible:[1540]}],[1,"side-menu",{title:[1],opened:[1540],showContact:[32],open:[64]}]]]],e)}))}}}));

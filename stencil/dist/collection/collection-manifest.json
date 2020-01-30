@@ -1,0 +1,13 @@
+{
+  "entries": [
+    "components/modal-dialog/modal-dialog.js",
+    "components/side-menu/side-menu.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "1.8.6",
+    "typescriptVersion": "3.7.5"
+  },
+  "collections": [],
+  "bundles": []
+}

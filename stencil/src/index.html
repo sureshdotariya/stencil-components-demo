@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/mycomponent.esm.js"></script>
+    <script nomodule src="/build/mycomponent.js"></script>
+    <style>
+      .side-nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .side-nav ul li a {
+        padding: 10px 10px;
+        display: block;
+        color: #000;
+        text-decoration: none;
+      }
+
+      .side-nav ul li a:hover,
+      .side-nav ul li a:active {
+        background: #58ca43;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="side-drawer-btn">Open Side Menu</button>
+    <side-menu title="Main Menu">
+      <nav class="side-nav">
+        <ul>
+          <li><a href="/">A Link</a></li>
+          <li><a href="/">Another Link</a></li>
+          <li><a href="/">A third Link</a></li>
+        </ul>
+      </nav>
+    </side-menu>
+
+    <button id="modal-btn">Open Modal</button>
+    <modal-dialog title="Success">
+      <p>This is something really very interesting</p>
+    </modal-dialog>
+
+    <script>
+      const sideDrawerButton = document.querySelector("#side-drawer-btn");
+      const sideDrawer = document.querySelector("side-menu");
+      sideDrawerButton.addEventListener("click", () => {
+        if (!sideDrawer.opened) {
+          console.log("Opening side drawer...");
+          // sideDrawer.open = true;
+          sideDrawer.open();
+        }
+      });
+
+      const sideDrawerButton1 = document.querySelector("#modal-btn");
+      const sideDrawer1 = document.querySelector("modal-dialog");
+      sideDrawerButton1.addEventListener("click", () => {
+        if (!sideDrawer1.visible) {
+          console.log("Opening modal dialog...");
+          sideDrawer1.visible = true;
+        }
+      });
+    </script>
+  </body>
+</html>
