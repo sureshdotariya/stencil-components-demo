@@ -1,0 +1,29 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1>Stencil Web Components Demo</h1>
+<router-outlet></router-outlet>
+
+<side-menu title="Main Menu" #sidemenu>
+  <nav class="side-nav">
+    <ul>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/">Users</a>
+      </li>
+      <li>
+        <a href="/">Settings</a>
+      </li>
+      <li>
+        <a href="/">Logout</a>
+      </li>
+    </ul>
+  </nav>
+</side-menu>
+
+<input type="button" value="open side menu" (click)="openSideMenu()" />
+
+<modal-dialog title="Success" [visible]="isLoaded | async" #modaldialog>
+  <p>This is something really very interesting</p>
+</modal-dialog>
+<input type="button" value="Modal Dialog" (click)="openModal()" />

@@ -1,0 +1,18 @@
+.side-nav {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li a {
+      padding: 10px 10px;
+      display: block;
+      color: #000;
+      text-decoration: none;
+    }
+    li a:hover,
+    li a:active {
+      background: #58ca43;
+      color: #fff;
+    }
+  }
+}
